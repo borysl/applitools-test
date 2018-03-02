@@ -1,0 +1,16 @@
+{
+  "name": "applitools-test",
+  "version": "1.0.0",
+  "description": "Try using https://www.applitools.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^2.35.0",
+    "eyes.selenium": "github:borysl/Eyes.Selenium.JavaScript",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
