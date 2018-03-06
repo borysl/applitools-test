@@ -3,12 +3,6 @@
 const YOUR_API_KEY = require('./settings.json').apiKey;
 console.log(`Using API key: ${YOUR_API_KEY}`);
 
-const promiseFactory = {
-    makePromise: (p) => (new Promise(p)),
-    resolve: Promise.resolve.bind(Promise),
-    reject: Promise.reject.bind(Promise)
-  };
-
   var chrome = require('chromedriver');
 
 function main() {
@@ -20,7 +14,7 @@ function main() {
 
     // Initialize the eyes SDK and set your private API key.
     var Eyes = require('eyes.selenium').Eyes;
-    var eyes = new Eyes(undefined, undefined, promiseFactory);
+    var eyes = new Eyes();
     eyes.setApiKey(YOUR_API_KEY);
 
     try {
